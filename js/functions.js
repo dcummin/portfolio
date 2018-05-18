@@ -47,13 +47,22 @@ $(window).scroll(function(){
 });
 
 // Navbar will chnage colors on scroll
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navcontainer");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
+$(document).ready(function () {
+    checkHeaderStatus()
+    $(window).scroll(function () {
+        checkHeaderStatus()
+    });
 });
 
+function checkHeaderStatus() {
+    var navbar = $(".navcontainer");
+    var scrollPosition = $(window).scrollTop();
+    if (scrollPosition === 0) {
+        navbar.css("background-color", "rgba(32, 52, 74, 0");
+    } else {
+        navbar.css("background-color", "rgba(32, 52, 74, 1");
+    }
+}
 
 
 $(".headline_button").click(function(){
