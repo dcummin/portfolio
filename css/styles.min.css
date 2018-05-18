@@ -14,7 +14,7 @@
 .name{font-size:3.35rem;line-height:2.5rem;margin-bottom:4rem;font-weight:700}.occupation{font-size:1.95rem;color:#fff;font-weight:300;margin-top:-1rem;margin-bottom:2rem;letter-spacing:.1rem}
 .headline_button{border:2px solid #ff6041;background:#ff6041;border-radius:5px;padding:.8rem 0;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;width:220px;margin:0 auto;cursor:pointer;font-size:1.2rem;float:right;color:#fff}
 #portfolio_text,#about_text,#contact_text,#footer{max-width:900px;margin:0 auto}#about{background-color:white}
-#about,#portfolio,#contact,#footer{padding:4rem 0}#contact{background-color:#20344a;padding-bottom:7rem}
+#about,#portfolio,#contact{padding:4rem 0}#footer{padding:2.5rem 0}#contact{background-color:#20344a;padding-bottom:7rem}
 .fa-linkedin,.fa-github,.fa-behance,.fa-facebook{margin:0;text-align:center;text-decoration:none;color:#fff;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .socialMediaLink{cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:10px;height:10px;padding:25px;background:#20344a;border-radius:50%;margin:1rem;border:2px solid #20344a;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .socialMediaLink:hover{background:#fff}.toggleBlue{color:#20344a}.resume{color:#3273dc;cursor:pointer}
