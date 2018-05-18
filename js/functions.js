@@ -1,0 +1,83 @@
+
+
+// Cache selectors
+var lastId,
+    topMenu = $(".navcontainer"),
+    topMenuHeight = topMenu.outerHeight(),
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu iztems
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").addClass("active").siblings().removeClass("active");
+   }
+});
+
+// Navbar will chnage colors on scroll
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navcontainer");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+
+$(".headline_button").click(function(){
+  $("html, body").animate({
+      scrollTop: $("#portfolio").offset().top}, "slow");
+});
+
+// toggle arrow icon when hover over "View Work" headline_button
+$(".headline_button").hover(function() {
+    $(".rotate").toggleClass("down");
+})
+
+$(".linkedin").hover(function() {
+    $(".fa-linkedin").toggleClass("toggleBlue");
+})
+
+$(".github").hover(function() {
+    $(".fa-github").toggleClass("toggleBlue");
+})
+
+$(".behance").hover(function() {
+    $(".fa-behance").toggleClass("toggleBlue");
+})
+
+$(".facebook").hover(function() {
+    $(".fa-facebook").toggleClass("toggleBlue");
+})
