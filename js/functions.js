@@ -1,4 +1,15 @@
+//Contact form built with ajax
+$("form").submit(function(evt){
+  evt.preventDefault();
+  var url = $(this).attr("action");
+  var formData = $(this).serialize();
+  $.post(url, formData, function(response){
+    $("#messageSent").html("<p>Thank you! Your message has been sent!</p>");
+    $(".submit").disabled = true;
+    $(".submit").addClass("submitClick").removeClass("submitNoClick");
 
+  }); //end post
+}); //end submit
 
 // Cache selectors
 var lastId,

@@ -291,19 +291,37 @@ outline: none;
 }
 
 .submit{
-    border: 2px solid #FF6041;
-    background: #FF6041;
   border-radius: 5px;
   padding: .8rem 0;
-  transition: all .3s ease-in-out;
     width: 220px;
     margin: 0 auto;
     margin-bottom: 3rem;
-    cursor: pointer;
   font-size: 1.2rem;
   margin-right: .5rem;
   float: right;
-  color: #fff;
+}
+
+.submit:focus{
+outline: none;
+}
+
+#messageSent{
+  color: #FF6041;
+  text-align: center;
+}
+
+.submitNoClick{
+  border: 2px solid #FF6041;
+  background: #FF6041;
+  cursor: pointer;
+    color: #fff;
+}
+
+.submitClick{
+  border: none;
+  background: #7E3424;
+  color: #602215;
+  cursor: none;
 }
 
 

@@ -121,13 +121,14 @@
               <div id="contact">
                 <div id="contact_text">
                   <p class="sectiontitle" style="color:#fff">Contact</p>
+                  <div id="messageSent"></div>
 
                   <form data-name="Email Form" id="email-form" name="email_form" method="post" action="./acknowledge.php">
                       <div class="inputFieldContainer">
                         <input class="inputField enterName" maxlength="5000" type="text" name="name" placeholder="Enter your name">
                         <input class="inputField enterEmail"  maxlength="5000" type="email" name="email" placeholder="Enter your email">
                         <textarea class="inputField enterMessage"  maxlength="5000" type="text" name="message" placeholder="Enter message here"></textarea>
-                        <input class="submit" name="send" type="submit" value="Submit">
+                        <input class="submit submitNoClick" name="send" type="submit" value="Submit">
                       </div>
                     </form>
                 </div>
