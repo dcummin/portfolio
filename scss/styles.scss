@@ -198,53 +198,56 @@ color: #fff;
   color: grey;
 }
 
-
-.fa-linkedin, .fa-github, .fa-behance, .fa-facebook{
-  margin: 0;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  transition: all .2s ease-in-out;
-}
-
-.socialMediaLink, .footerLink{
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footerlinkContainer, .aboutlinkContainer{
+  padding: 1rem;
   border-radius: 50%;
-  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color .2s ease-in-out;
 }
 
-.socialMediaLink{
-  background: #20344A;
-    border: 2px solid #20344A;
-    width: 10px;
-    height: 10px;
-    padding: 25px;
-    margin: 1rem;
+.aboutlinkContainer{
+  background-color: rgba(32, 52, 74, 1);
+  border: 2px solid #20344A;
+  width: 50px;
+  height: 50px;
 }
 
-.socialMediaLink:hover{
-  background: #fff;
+.aboutlinkContainer:hover{
+  background-color: rgba(32, 52, 74, 0);
+  color: #20344A;
+}
+
+.footerlinkContainer{
+  background-color: rgba(128, 128, 128, 1);
+  border: 2px solid #808080;
+  width: 30px;
+  height: 30px;
+}
+
+.footerlinkContainer:hover{
+  background-color: rgba(128, 128, 128, 0);
+  color: #808080;
+}
+
+.aboutLink, .footerLink{
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.aboutLink{
+  font-size:1.5rem;
 }
 
 .footerLink{
-  background: red;
-    border: 2px solid grey;
-    width: 5px;
-    height: 20px;
-    padding: 15px;
-    margin: 0 .5rem;
+  font-size:1rem;
 }
 
-.footerLink:hover{
-  background: #f3f3f3;
-}
-
-.toggleBlue{
-  color: #20344A;
-}
 
 .resume{
   color: #3273dc;

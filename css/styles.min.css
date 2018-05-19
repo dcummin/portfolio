@@ -15,17 +15,17 @@
 #portfolio_text,#about_text,#contact_text,#footer_text{max-width:900px;margin:0 auto}
 #about{background-color:white}#contact{background-color:#20344a;padding:4rem 0 7rem 0}
 #about,#portfolio{padding:4rem 0}#footer{padding:3rem 0 3rem 0}#about,#portfolio,#contact,#footer{max-width:100%;margin:0 auto}
-.Copyright{text-align:center;color:grey}.fa-linkedin,.fa-github,.fa-behance,.fa-facebook{margin:0;text-align:center;text-decoration:none;color:#fff;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
-.socialMediaLink,.footerLink{cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:50%;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
-.socialMediaLink{background:#20344a;border:2px solid #20344a;width:10px;height:10px;padding:25px;margin:1rem}
-.socialMediaLink:hover{background:#fff}.footerLink{background:red;border:2px solid grey;width:5px;height:20px;padding:15px;margin:0 .5rem}
-.footerLink:hover{background:#f3f3f3}.toggleBlue{color:#20344a}.resume{color:#3273dc;cursor:pointer}
+.Copyright{text-align:center;color:grey}.footerlinkContainer,.aboutlinkContainer{padding:1rem;border-radius:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 .5rem;cursor:pointer;color:#fff;-webkit-transition:background-color .2s ease-in-out;-o-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out}
+.aboutlinkContainer{background-color:#20344a;border:2px solid #20344a;width:50px;height:50px}
+.aboutlinkContainer:hover{background-color:rgba(32,52,74,0);color:#20344a}.footerlinkContainer{background-color:gray;border:2px solid gray;width:30px;height:30px}
+.footerlinkContainer:hover{background-color:rgba(128,128,128,0);color:gray}.aboutLink,.footerLink{margin:0;text-align:center;text-decoration:none}
+.aboutLink{font-size:1.5rem}.footerLink{font-size:1rem}.resume{color:#3273dc;cursor:pointer}
 .resume:hover{color:#000}.inputFieldContainer{margin:0 auto;width:610px}.inputField{background-color:#33506e;border:0;font-size:1.05rem;padding:1rem;color:#fff}
 .inputField::-webkit-input-placeholder{color:#8596a9}.inputField:-ms-input-placeholder{color:#8596a9}
 .inputField::-ms-input-placeholder{color:#8596a9}.inputField::placeholder{color:#8596a9}
 .inputField:focus{outline:0}.enterName,.enterEmail,.enterMessage{width:600px;margin-bottom:.5rem}
 .enterName,.enterEmail{height:38px}.enterMessage{height:180px}.submit{border-radius:5px;padding:.8rem 0;width:220px;margin:0 auto;margin-bottom:3rem;font-size:1.2rem;margin-right:.5rem;float:right}
-.submit:focus{outline:0}.messageSent{color:white;text-align:center}.submitNoClick{border:2px solid #ff6041;background:#ff6041;cursor:pointer;color:#fff}
+.submit:focus{outline:0}#messageSent{color:#ff6041;text-align:center}.submitNoClick{border:2px solid #ff6041;background:#ff6041;cursor:pointer;color:#fff}
 .submitClick{border:0;background:#7e3424;color:#602215;cursor:none}#profile{width:90px;margin:1rem;border:3px solid #20344a;border-radius:50%}
 .bio{text-align:center;font-size:1.3rem;line-height:1.8rem}.portfoliorow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:distribute;justify-content:space-around;margin-top:2.5rem}
 .rotate{-webkit-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}

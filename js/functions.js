@@ -11,6 +11,7 @@ $("form").submit(function(evt){
   }); //end post
 }); //end submit
 
+
 // Cache selectors
 var lastId,
     topMenu = $(".navcontainer"),
@@ -55,9 +56,9 @@ $(window).scroll(function(){
          .parent().removeClass("active")
          .end().filter("[href='#"+id+"']").addClass("active").siblings().removeClass("active");
    }
-});
+}); //Nav chnages based on the position scroll of the page
 
-// Navbar will chnage colors on scroll
+
 $(document).ready(function () {
     checkHeaderStatus()
     $(window).scroll(function () {
@@ -73,31 +74,9 @@ function checkHeaderStatus() {
     } else {
         navbar.css({"background-color": "rgba(32, 52, 74, 1", "box-shadow": "1px 1px 3px #000"});
     }
-}
+} // Navbar will chnage colors on scroll
 
 
-$(".headline_button").click(function(){
-  $("html, body").animate({
-      scrollTop: $("#portfolio").offset().top}, "slow");
-});
-
-// toggle arrow icon when hover over "View Work" headline_button
 $(".headline_button").hover(function() {
     $(".rotate").toggleClass("down");
-})
-
-$(".linkedin").hover(function() {
-    $(".fa-linkedin").toggleClass("toggleBlue");
-})
-
-$(".github").hover(function() {
-    $(".fa-github").toggleClass("toggleBlue");
-})
-
-$(".behance").hover(function() {
-    $(".fa-behance").toggleClass("toggleBlue");
-})
-
-$(".facebook").hover(function() {
-    $(".fa-facebook").toggleClass("toggleBlue");
-})
+}) // toggle arrow icon when hover over "View Work" headline_button
