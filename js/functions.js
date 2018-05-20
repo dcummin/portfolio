@@ -69,7 +69,7 @@ $(document).ready(function () {
 function checkHeaderStatus() {
     var navbar = $(".navcontainer");
     var scrollPosition = $(window).scrollTop();
-    if (scrollPosition === 0) {
+    if (scrollPosition === 0){
         navbar.css({"background-color": "rgba(32, 52, 74, 0", "box-shadow": "none"});
     } else {
         navbar.css({"background-color": "rgba(32, 52, 74, 1", "box-shadow": "1px 1px 3px #000"});
@@ -77,6 +77,11 @@ function checkHeaderStatus() {
 } // Navbar will chnage colors on scroll
 
 
-$(".headline_button").hover(function() {
+$(".headline_text_button").hover(function() {
     $(".rotate").toggleClass("down");
 }) // toggle arrow icon when hover over "View Work" headline_button
+
+
+$(".dropdownMenuMobile").click(function(){
+  $(".navLinksMobile").slideToggle();
+})
