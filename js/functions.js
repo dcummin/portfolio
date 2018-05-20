@@ -5,8 +5,11 @@ $("form").submit(function(evt){
   var formData = $(this).serialize();
   $.post(url, formData, function(response){
     $("#messageSent").html("<p>Thank you! Your message has been sent!</p>");
-    $(".submit").disabled = true;
-    $(".submit").addClass("submitClick").removeClass("submitNoClick");
+    $(".formContainer_button").disabled = true;
+    $(".formContainer_button").addClass("formContainer_button_NoClick").removeClass("formContainer_button_Click");
+    $(".formContainer_button").hover(function(){
+        $(".formContainer_button").css({"background-color": "#7E3424","border": "2px solid #7E3424"});
+    })
 
   }); //end post
 }); //end submit
@@ -14,7 +17,7 @@ $("form").submit(function(evt){
 
 // Cache selectors
 var lastId,
-    topMenu = $(".navcontainer"),
+    topMenu = $(".navContainer"),
     topMenuHeight = topMenu.outerHeight(),
     // All list items
     menuItems = topMenu.find("a"),
@@ -67,7 +70,7 @@ $(document).ready(function () {
 });
 
 function checkHeaderStatus() {
-    var navbar = $(".navcontainer");
+    var navbar = $(".navContainer_desktop");
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition === 0){
         navbar.css({"background-color": "rgba(32, 52, 74, 0", "box-shadow": "none"});
@@ -75,6 +78,13 @@ function checkHeaderStatus() {
         navbar.css({"background-color": "rgba(32, 52, 74, 1", "box-shadow": "1px 1px 3px #000"});
     }
 } // Navbar will chnage colors on scroll
+
+
+$(".headline_text_button").click(function() {
+  $('html,body').animate({
+  scrollTop: $("#portfolio").offset().top},
+  'slow');
+});// scrolls to portfolio section when view work button is clicked
 
 
 $(".headline_text_button").hover(function() {

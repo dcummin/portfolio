@@ -13,7 +13,6 @@ box-sizing: border-box;
   text-align: center;
   font-weight: bold;
   font-size: 2.1rem;
-  color:#3A3B3A;
   margin: 0;
 }
 
@@ -62,7 +61,7 @@ align-items: center;
 
 // Navigation Menu Starts
 
-.navContainerMobile{
+.navContainer_mobile{
   width: 100%;
   display: block;
   display: flex;
@@ -71,6 +70,11 @@ align-items: center;
   align-items: center;
   background-color: #192330;
   padding: 1rem 0;
+}
+
+.navContainer_desktop{
+  width: 100%;
+  display: none;
 }
 
 .navIconsMobile{
@@ -117,7 +121,7 @@ background-color: #F3F3F3;
 }
 
 
-.navLinksMobile a:hover, .active{
+.navLinksMobile a:hover{
   color: #EF5C3E;
   background-color: #E9E9E8;
 }
@@ -210,27 +214,27 @@ background-color: #F3F3F3;
 .aboutLinkContainer{
   @include linkStyle;
   margin: 2.5rem .5rem;
-  background-color: rgba(32, 52, 74, 1);
+  background-color: rgba(25, 35, 48, 1);
   border: 2px solid #20344A;
   width: 42px;
   height: 42px;
 }
 
 .aboutLinkContainer:hover{
-  background-color: rgba(32, 52, 74, 0);
-  color: #20344A;
+  background-color: rgba(25, 35, 48, 0);
+  color: #192330;
 }
 
 .aboutLink{
     margin: 0;
     text-align: center;
-    font-size:1.3rem;
+    font-size:1.15rem;
 }
 
 #profile{
   width: 80px;
     margin: 1rem .5rem;
-    border: 3px solid #20344A;
+    border: 3px solid #192330;
     border-radius: 50%;
 }
 
@@ -252,6 +256,10 @@ background-color: #F3F3F3;
 
 .resume:hover{
   color: #000;
+}
+
+.hidebr2{
+  display: none;
 }
 
 // About Section Ends
@@ -277,7 +285,7 @@ background-color: #F3F3F3;
 
 .portfolio_row_container{
   position: relative;
-  height: 200px;
+  height: 30%;
 }
 
 .portfolio_row_image{
@@ -336,7 +344,8 @@ background-color: white;
 #contact{
   width: 100%;
   padding: 2rem 1rem;
-  background-color: #20344A;
+  background-color: #192330;
+    overflow: hidden;
 }
 
 
@@ -346,9 +355,9 @@ background-color: white;
 
 .formContainer{
   width: 100%;
-  background-color: #33506E;
   border: none;
   padding: 1rem;
+  margin: 1rem auto 0 auto;
 }
 
 .formInput{
@@ -357,6 +366,9 @@ background-color: white;
   margin: 0 auto;
   margin-bottom: .5rem;
   font-size: 1.05rem;
+  background-color: #304259;
+  border: 0;
+  padding: 1rem;
 }
 
 .formInput::placeholder{
@@ -372,7 +384,14 @@ outline: none;
 }
 
 .formContainer_button{
+  display: block;
+  margin: 0 auto;
   @include buttonStyle;
+}
+
+.formContainer_button:hover{
+    background-color: #DB5338;
+    border: 2px solid #DB5338;
 }
 
 .formContainer_button:focus{
@@ -384,76 +403,139 @@ outline: none;
   text-align: center;
 }
 
-.submitNoClick{
+.formContainer_button_Click{
   border: 2px solid #FF6041;
   background: #FF6041;
   cursor: pointer;
-    color: #fff;
+  color: #fff;
 }
 
-.submitClick{
+.formContainer_button_NoClick{
   border: none;
   background: #7E3424;
   color: #602215;
-  cursor: none;
+  cursor: not-allowed;
 }
+
 
 
 // Contact Section Ends
 
-.Copyright{
+// Footer Starts Here
+
+#footer{
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #F3F3F3;
+}
+
+#footer_text{
+  @include mobileMargins;
+}
+
+.footer_copyright{
   text-align: center;
   color: grey;
 }
 
-
-.footerlinkContainer{
-  background-color: rgba(128, 128, 128, 1);
-  border: 2px solid #808080;
-  width: 30px;
-  height: 30px;
+.footerLinkRow{
+    @include linkPosition;
 }
 
-.footerlinkContainer:hover{
+.footerLinkContainer{
+    @include linkStyle;
+    background-color: rgba(128, 128, 128, 1);
+    border: 2px solid #808080;
+    width: 30px;
+    height: 30px;
+    margin: 0 .5rem;
+}
+
+.footerLinkContainer:hover{
   background-color: rgba(128, 128, 128, 0);
   color: #808080;
 }
-
 
 .footerLink{
   font-size:1rem;
 }
 
+// Footer Section Ends
 
+// Media Queries Begin
 
+@media only screen and (min-width: 480px){
 
+  .hidebr{
+    display: none;
+  }
 
-//NEW CODE ENDS HERE
-
-
-.footerLinkRow{
-  @include linkPosition;
+  .headline_text_occupation{
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+  }
 }
 
-.footerlinkContainer{
-  @include linkStyle;
-}
-
-.footerLink{
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-#footer{
-  padding: 3rem 0 3rem 0;
-}
 
 @media only screen and (min-width: 640px){
 
   .navcontainerMobile{
     display: none;
   }
+
+}
+
+@media only screen and (min-width: 768px){
+  .headline_text_occupation{
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+  .navContainer_mobile{
+    display: none;
+  }
+
+  .navContainer_desktop{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .white{
+    color:#fff;
+  }
+
+  .navLinksDesktop a{
+      display: inline-block;
+      margin-right: 1rem;
+      padding: .5rem 1rem;
+      font-size: 1.1rem;
+      letter-spacing: .1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all .4s ease-in-out;
+  }
+
+  .logoDesktop{
+    width: 30px; height: 30px;
+  }
+
+  .active{
+    color: #F15C3E;
+  }
+
+.headline{
+  height: 100vh;
+}
+
+.headline_overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 }

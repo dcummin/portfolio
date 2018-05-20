@@ -21,21 +21,31 @@
   <body>
 
     <!-- Navigation Menu STARTS -->
+    <div class="navContainer">
+      <div class="navContainer_mobile">
+            <div class="navIconsMobile">
+              <img class="logoMobile" src="./images/logo.png">
+              <i class="fas fa-bars dropdownMenuMobile"></i>
+            </div>
 
-      <div class="navContainerMobile">
-
-        <div class="navIconsMobile">
-          <img class="logoMobile" src="./images/logo.png">
-          <i class="fas fa-bars dropdownMenuMobile"></i>
+            <div class="navLinksMobile">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+            </div>
         </div>
 
-          <div class="navLinksMobile">
-            <a class="active white" href="#home">Home</a>
-            <a class="white" href="#about">About</a>
-            <a class="white" href="#portfolio">Portfolio</a>
-            <a class="white" href="#contact">Contact</a>
+          <div class="navContainer_desktop">
+              <img class="logoDesktop" src="./images/logo.png">
+              <div class="navLinksDesktop">
+                <a class="active white" href="#home">Home</a>
+                <a class="white" href="#about">About</a>
+                <a class="white" href="#portfolio">Portfolio</a>
+                <a class="white" href="#contact">Contact</a>
+              </div>
           </div>
-      </div>
+        </div>
 
       <!-- Navigation Menu ENDS -->
 
@@ -92,7 +102,7 @@
 
             </div> <!--Closing Social Media Link Row-->
 
-              <p class="about_text_bio">Hi, I'm Dominique. I'm a front-end web developer and designer with more than<br> 5 years of experience designing for print and web and 2+ years of experience<br> building websites and landing pages. <br class="hidebr"><a class="resume">View My Resume ></a></p>
+              <p class="about_text_bio">Hi, I'm Dominique. I'm a front-end web developer and designer with more than<br class="hidebr2"> 5 years of experience designing for print and web and 2+ years of experience<br class="hidebr2"> building websites and landing pages. <br class="hidebr"><a class="resume">View My Resume ></a></p>
 
             </div><!--Closing Text Container-->
           </div> <!--Closing About Container-->
@@ -158,45 +168,62 @@
                   <div id="messageSent"></div>
 
                   <form data-name="Email Form" id="email-form" name="email_form" method="post" action="./acknowledge.php">
+
+                    <div class="messageSent"></div>
+
                       <div class="formContainer">
                           <input class="formInput formContainer_name" maxlength="5000" type="text" name="name" placeholder="Enter your name">
 
                           <input class="formInput formContainer_email"  maxlength="5000" type="email" name="email" placeholder="Enter your email">
 
                           <textarea class="formInput formContainer_message"  maxlength="5000" type="text" name="message" placeholder="Enter message here"></textarea>
+                        </div>
 
-                          <input class="formContainer_button submitNoClick" name="send" type="submit" value="Submit">
-                      </div>
+                          <input class="formContainer_button formContainer_button_Click" name="send" type="submit" value="Submit">
                     </form>
                 </div>
               </div>
 
+            <!-- Contact Section Ends -->
+
+            <!-- Footer Section Starts -->
+
               <div id="footer">
-                <div id="contact_text">
-                  <p class="Copyright">Copyright © 2018 Dominique Cummings</p>
-                      <div class="footer_text_socialMediaLinks">
+                <div id="footer_text">
+                  <p class="footer_copyright">Copyright © 2018 Dominique Cummings</p>
 
-                        <a href="https://www.linkedin.com/in/dominique-cummings-a777a149/">
-                            <div class="footerlinkContainer">
-                              <i class="fab fa-facebook-f footerLink"></i>
-                            </div>
-                        </a>
+                  <div class="footerLinkRow">
 
-                    <div class="footerlinkContainer">
-                        <i class="fab fa-github footerLink"></i>
-                    </div>
+                    <a href="https://www.linkedin.com/in/dominique-cummings-a777a149/">
+                      <div class="footerLinkContainer">
+                        <i class="fab fa-facebook-f footerLink"></i>
+                      </div>
+                    </a>
 
-                      <div class="footerlinkContainer">
+                    <a href="https://www.linkedin.com/in/dominique-cummings-a777a149/">
+                      <div class="footerLinkContainer">
+                          <i class="fab fa-github footerLink"></i>
+                      </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/dominique-cummings-a777a149/">
+                      <div class="footerLinkContainer">
                         <i class="fab fa-behance footerLink"></i>
                       </div>
+                    </a>
 
-                      <div class="footerlinkContainer">
+                    <a href="https://www.linkedin.com/in/dominique-cummings-a777a149/">
+                      <div class="footerLinkContainer">
                         <i class="fab fa-linkedin-in footerLink"></i>
                       </div>
+                    </a>
 
-                  </div>
+                </div> <!--Closing Social Media Link Row-->
+
                 </div>
               </div>
+
+             <!-- Footer Section Ends -->
 
 
   </body>
