@@ -73,9 +73,9 @@ function checkHeaderStatus() {
     var navbar = $(".navContainer_desktop");
     var scrollPosition = $(window).scrollTop();
     if (scrollPosition === 0){
-        navbar.css({"background-color": "rgba(32, 52, 74, 0", "box-shadow": "none"});
+        navbar.css({"background-color": "rgba(25, 35, 48, 0", "box-shadow": "none"});
     } else {
-        navbar.css({"background-color": "rgba(32, 52, 74, 1", "box-shadow": "1px 1px 3px #000"});
+        navbar.css({"background-color": "rgba(25, 35, 48, 1", "box-shadow": "1px 1px 3px #000"});
     }
 } // Navbar will chnage colors on scroll
 
