@@ -31,10 +31,11 @@ var lastId,
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
   var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      offsetTop = href === "#" ? 0 : $(href).offset().top - 80;
   $('html, body').stop().animate({
       scrollTop: offsetTop
   }, 300);
+  $(".navLinksMobile").slideUp();
   e.preventDefault();
 });
 
@@ -45,7 +46,7 @@ $(window).scroll(function(){
 
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
+     if ($(this).offset().top - 90 < fromTop)
        return this;
    });
    // Get the id of the current element
@@ -82,7 +83,7 @@ function checkHeaderStatus() {
 
 $(".headline_text_button").click(function() {
   $('html,body').animate({
-  scrollTop: $("#portfolio").offset().top},
+  scrollTop: $("#portfolio").offset().top - 80},
   'slow');
 });// scrolls to portfolio section when view work button is clicked
 

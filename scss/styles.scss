@@ -68,8 +68,8 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #192330;
-  padding: 1rem 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .navContainer_desktop{
@@ -78,12 +78,14 @@ align-items: center;
 }
 
 .navIconsMobile{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #192330;
+  padding: 1rem;
 }
 
 .logoMobile{
@@ -104,26 +106,23 @@ align-items: center;
 .navLinksMobile{
   width: 100%;
   display: none;
-  margin: 1rem 0 0 0;
+  background-color: #304259;
 }
 
 .navLinksMobile a{
-background-color: #F3F3F3;
-  border-bottom: 1px solid grey;
   display: block;
-  text-align: center;
   padding: .7rem 1rem;
   font-size: 1.1rem;
   letter-spacing: .1rem;
+  text-align: center;
   font-weight: normal;
   text-decoration: none;
-  color: #3A3B3A;
+  color: #7796A9;
 }
 
 
 .navLinksMobile a:hover{
   color: #EF5C3E;
-  background-color: #E9E9E8;
 }
 
 // Navigation Menu ENDS
@@ -143,7 +142,7 @@ background-color: #F3F3F3;
 }
 
 .headline_overlay{
-  padding: 1rem 0 2.5rem 0;
+  padding: 6rem 0 2.5rem 0;
   height: 100%;
     width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -200,7 +199,7 @@ background-color: #F3F3F3;
 #about{
   width: 100%;
   background-color: #fff;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 }
 
 #about_text{
@@ -269,7 +268,7 @@ background-color: #F3F3F3;
 #portfolio{
   width: 100%;
   background-color: #F3F3F3;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 
 #portfolio_text{
@@ -344,7 +343,7 @@ background-color: white;
 
 #contact{
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   background-color: #192330;
     overflow: hidden;
 }
@@ -481,6 +480,10 @@ outline: none;
     line-height: 1.7rem;
   }
 
+  .hidebr{
+    display: none;
+  }
+
 }
 
 
@@ -495,8 +498,8 @@ outline: none;
     line-height: 2.3rem;
   }
 
-  .headline_overlay{
-    padding: 2.5rem 0 3rem 0;
+  .hidebr{
+    display: block;
   }
 
 }
