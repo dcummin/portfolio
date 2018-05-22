@@ -6,14 +6,15 @@ box-sizing: border-box;
   margin: 0 auto;
   width:100%;
   background-color: #f3f3f3;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
 .sectionTitle{
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.83rem;
   margin: 0;
+  letter-spacing: .08rem;
 }
 
 a{
@@ -115,7 +116,7 @@ align-items: center;
   font-size: 1.1rem;
   letter-spacing: .1rem;
   text-align: center;
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: none;
   color: #7796A9;
 }
@@ -158,15 +159,16 @@ align-items: center;
 }
 
 .headline_text_name{
-  font-size: 1.85rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
   margin: 1rem;
 }
 
 .headline_text_occupation{
   font-size: 1.1rem;
   line-height: 1.6rem;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: .11rem;
   margin-bottom: 1.6rem;
 }
@@ -240,7 +242,8 @@ align-items: center;
 .about_text_bio{
   text-align: center;
   font-size: 1.1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
+  font-weight: 400;
   margin-top: 0;
 }
 
@@ -367,8 +370,11 @@ background-color: white;
   margin-bottom: .5rem;
   font-size: 1.05rem;
   background-color: #304259;
+  color: #8596A9;
   border: 0;
   padding: 1rem;
+font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 .formInput::placeholder{
@@ -377,6 +383,11 @@ background-color: white;
 
 .formInput:focus{
 outline: none;
+background-color: #304259;
+}
+
+input:-webkit-autofill{
+  background-color: rgb(48, 66, 89) !important;
 }
 
 .formContainer_message{
@@ -386,6 +397,7 @@ outline: none;
 .formContainer_button{
   display: block;
   margin: 0 auto;
+  margin-top: .5rem;
   @include buttonStyle;
 }
 
@@ -511,6 +523,10 @@ outline: none;
     line-height: 2.2rem;
   }
 
+  .portfolio_row_container, .formContainer{
+    width: 700px;
+  }
+
   .hidebr2{
     display: block;
   }
@@ -599,22 +615,21 @@ outline: none;
   margin: .3rem auto;
 }
 
-.portfolio_row_container{
-  width: 70%;
-}
-
 .portfolio_row_overlayText{
   font-size: 1.3rem;
 }
 
-.formContainer{
-  width: 75%;
+.flexButton{
+  width: 668px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .formContainer_button{
-float:right;
-margin-right: 8.6rem;
-
+align-self: flex-end;
+margin: 0;
 }
 
 .hidebr{
