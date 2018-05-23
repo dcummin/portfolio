@@ -28,7 +28,7 @@ a{text-decoration:none}.navContainer_mobile{width:100%;display:block;display:-we
 .portfolio_row_button{border:2px solid #fff;border-radius:5px;padding:.8rem 0;color:#fff;text-align:center;width:220px;margin:0 auto;cursor:pointer;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
 .portfolio_row_button:hover{background-color:white;color:#ff6041}#contact{width:100%;padding:4rem 1rem;background-color:#192330;overflow:hidden}
 #contact_text{width:90%;margin:0 auto}.formContainer{width:100%;border:0;padding:1rem;margin:1rem auto 0 auto}
-.formInput{width:100%;height:38px;margin:0 auto;margin-bottom:.5rem;font-size:1.05rem;background-color:#304259;color:#8596a9;border:0;padding:1rem;font-family:'Roboto',sans-serif;font-weight:400}
+.formInput{width:100%;height:38px;margin:0 auto;margin-bottom:.5rem;font-size:1.05rem;background-color:#304259;color:white;border:0;padding:1rem;font-family:'Roboto',sans-serif;font-weight:400}
 .formInput::-webkit-input-placeholder{color:#8596a9}.formInput:-ms-input-placeholder{color:#8596a9}
 .formInput::-ms-input-placeholder{color:#8596a9}.formInput::placeholder{color:#8596a9}
 .formInput:focus{outline:0;background-color:#304259}input:-webkit-autofill{background-color:#304259 !important}
@@ -48,7 +48,7 @@ a{text-decoration:none}.navContainer_mobile{width:100%;display:block;display:-we
 .white{color:#fff}.white:hover{color:#f15c3e}.navLinksDesktop a{display:inline-block;margin-right:1rem;padding:.5rem 1rem;font-size:1.1rem;letter-spacing:.1rem;font-weight:bold;text-decoration:none;-webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
 .logoDesktop{width:50px;height:50px}.active{color:#f15c3e}.headline{height:100vh}
 .headline_overlay{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.headline_text_name{font-size:3rem}.sectionTitle{font-size:2rem}#profile{width:90px}
+.headline_text_name{font-size:3rem}.sectionTitle{font-size:2rem}#profile{width:100px}
 .about_text_bio{font-size:1.3rem;line-height:1.9rem}.headline_text_occupation{font-size:1.7rem;line-height:2.3rem;margin:2.6rem 0}
 .aboutLinkRow{margin:.3rem auto}.portfolio_row_overlayText{font-size:1.3rem}.flexButton{width:668px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 .formContainer_button{-ms-flex-item-align:end;align-self:flex-end;margin:0}.hidebr{display:none}
