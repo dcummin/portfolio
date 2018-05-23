@@ -1,9 +1,5 @@
 //Contact form built with ajax
 $("form").submit(function(evt){
-  if ($.trim($(".formContainer_name").val()) === "" || $.trim($(".formContainer_email").val()) === "" || $.trim($(".formContainer_message").val()) === ""){
-    alert("You must fill in all of the fields");
-    return false;
-  } else{
   evt.preventDefault();
   var url = $(this).attr("action");
   var formData = $(this).serialize();
@@ -16,7 +12,6 @@ $("form").submit(function(evt){
     })
 
   }); //end post
-}
 }); //end submit
 
 
