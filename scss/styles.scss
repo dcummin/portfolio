@@ -34,7 +34,7 @@ a{
 }
 
 @mixin mobileMargins{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -474,6 +474,38 @@ outline: none;
 
 // Footer Section Ends
 
+// Testimonial Section Starts
+
+#testimonial{
+  width: 100%;
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+
+#testimonial_text{
+  @include mobileMargins;
+}
+
+.testimonial_card{
+  background-color: #F3F3F3;
+  padding: 1rem 2rem;
+  width:100%;
+  margin: 2rem auto 0 auto;
+  line-height: 1.5rem;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.fa-quote-left{
+  font-size: 2.2rem;
+  width: 100%;
+  text-align: center;
+  color: #FF6041;
+  margin: .5rem auto;
+}
+
+// Testimonial Section Ends
+
 // Media Queries Begin
 
 @media only screen and (min-width: 480px){
@@ -529,6 +561,11 @@ outline: none;
 
   .hidebr2{
     display: block;
+  }
+
+  .testimonial_card{
+    width:700px;
+    padding: 1.5rem 3rem;
   }
 }
 
