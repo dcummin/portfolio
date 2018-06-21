@@ -20,13 +20,13 @@ a{text-decoration:none}.navContainer_mobile{width:100%;display:block;display:-we
 #profile{width:80px;margin:1rem .5rem;border:3px solid #192330;border-radius:50%}
 .about_text_bio{text-align:center;font-size:1.1rem;line-height:1.6rem;font-weight:400;margin-top:0}
 .hidebr{display:block}.resume{color:#3273dc;cursor:pointer}.resume:hover{color:#000}
-.hidebr2{display:none}#portfolio{width:100%;background-color:#f3f3f3;padding:4rem 1rem}
-#portfolio_text{width:95%;margin:0 auto}.portfolio_row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:1.5rem auto}
-.portfolio_row_container{position:relative;width:100%;margin:0 auto}.portfolio_row_image{display:block;width:100%}
+.hidebr2{display:none}#portfolio{width:100%;background-color:#f3f3f3;padding:3rem 1rem}
+#portfolio_text{width:95%;margin:0 auto}.portfolio_row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 auto;width:100%}
+.portfolio_row_container{position:relative;width:100%;margin:1rem auto}.portfolio_row_image{display:block;width:100%}
 .portfolio_row_overlay{position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;opacity:0;-webkit-transition:opacity 1s ease;-o-transition:opacity 1s ease;transition:opacity 1s ease;background-color:#ff6041;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .portfolio_row_container:hover,.portfolio_row_overlay:hover{opacity:1}.portfolio_row_overlayText{color:#fff;text-align:center}
 .portfolio_row_button{border:2px solid #fff;border-radius:5px;padding:.8rem 0;color:#fff;text-align:center;width:220px;margin:0 auto;cursor:pointer;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
-.portfolio_row_button:hover{background-color:white;color:#ff6041}#contact{width:100%;padding:4rem 1rem;background-color:#192330;overflow:hidden}
+.portfolio_row_button:hover{background-color:white;color:#ff6041}#contact{width:100%;padding:3rem 1rem;background-color:#192330;overflow:hidden}
 #contact_text{width:95%;margin:0 auto}.formContainer{width:100%;border:0;padding:1rem;margin:1rem auto 0 auto}
 .formInput{width:100%;height:38px;margin:0 auto;margin-bottom:.5rem;font-size:1.05rem;background-color:#304259;color:white;border:0;padding:1rem;font-family:'Roboto',sans-serif;font-weight:400}
 .formInput::-webkit-input-placeholder{color:#8596a9}.formInput:-ms-input-placeholder{color:#8596a9}
@@ -45,14 +45,16 @@ a{text-decoration:none}.navContainer_mobile{width:100%;display:block;display:-we
 .fa-quote-left{font-size:2.2rem;width:100%;text-align:center;color:#ff6041;margin:.5rem auto}
 @media only screen and (min-width:480px){.headline_text_name{font-size:2.2rem}.headline_text_occupation{font-size:1.38rem;line-height:1.95rem}
 .about_text_bio{line-height:1.7rem}.hidebr{display:none}}@media only screen and (min-width:640px){.navcontainerMobile{display:none}
-.headline_text_name{font-size:2.4rem;line-height:2.3rem}.hidebr{display:block}}@media only screen and (min-width:768px){.headline_text_occupation{font-size:1.6rem;line-height:2.2rem}
-.portfolio_row_container,.formContainer{width:700px}.hidebr2{display:block}.testimonial_card{width:700px;padding:1.5rem 3rem}
+.headline_text_name{font-size:2.4rem;line-height:2.3rem}.hidebr{display:block}.portfolio_row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}
+.portfolio_row_container{width:48%;margin:1rem auto 0 auto}}@media only screen and (min-width:768px){.headline_text_occupation{font-size:1.6rem;line-height:2.2rem}
+.formContainer{width:700px}.hidebr2{display:block}.testimonial_card{width:700px;padding:1.5rem 3rem}
 }@media only screen and (min-width:1024px){.navContainer_mobile{display:none}.navContainer_desktop{position:fixed;z-index:10;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:90px;padding:0 1rem}
 .white{color:#fff}.white:hover{color:#f15c3e}.navLinksDesktop a{display:inline-block;margin-right:1rem;padding:.5rem 1rem;font-size:1.1rem;letter-spacing:.1rem;font-weight:bold;text-decoration:none;-webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
 .logoDesktop{width:50px;height:50px}.active{color:#f15c3e}.headline{height:100vh}
 .headline_overlay{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .headline_text_name{font-size:3rem}.sectionTitle{font-size:2rem}#profile{width:100px}
 .about_text_bio{font-size:1.3rem;line-height:1.9rem}.headline_text_occupation{font-size:1.7rem;line-height:2.3rem;margin:2.6rem 0}
-.aboutLinkRow{margin:.3rem auto}.portfolio_row_overlayText{font-size:1.3rem}.flexButton{width:668px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.aboutLinkRow{margin:.3rem auto}.portfolio_row_overlayText{font-size:1.3rem}.portfolio_row{width:900px}
+.flexButton{width:668px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 .formContainer_button{-ms-flex-item-align:end;align-self:flex-end;margin:0}.hidebr{display:none}
 }

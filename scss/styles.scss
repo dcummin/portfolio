@@ -271,7 +271,7 @@ align-items: center;
 #portfolio{
   width: 100%;
   background-color: #F3F3F3;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
 }
 
 #portfolio_text{
@@ -282,13 +282,14 @@ align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1.5rem auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .portfolio_row_container{
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .portfolio_row_image{
@@ -346,7 +347,7 @@ background-color: white;
 
 #contact{
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   background-color: #192330;
     overflow: hidden;
 }
@@ -546,6 +547,17 @@ outline: none;
     display: block;
   }
 
+  .portfolio_row{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .portfolio_row_container{
+    width: 48%;
+    margin: 1rem auto 0 auto;
+  }
+
 }
 
 @media only screen and (min-width: 768px){
@@ -555,7 +567,7 @@ outline: none;
     line-height: 2.2rem;
   }
 
-  .portfolio_row_container, .formContainer{
+.formContainer{
     width: 700px;
   }
 
@@ -654,6 +666,10 @@ outline: none;
 
 .portfolio_row_overlayText{
   font-size: 1.3rem;
+}
+
+.portfolio_row{
+  width: 900px;
 }
 
 .flexButton{
