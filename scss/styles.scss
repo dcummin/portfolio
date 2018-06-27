@@ -14,11 +14,12 @@ font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.83rem;
   margin: 0;
-  letter-spacing: .08rem;
+  letter-spacing: .03rem;
 }
 
 a{
   text-decoration: none;
+  color: #3273dc;
 }
 
 @mixin buttonStyle{
@@ -33,10 +34,6 @@ a{
   font-size: 1.2rem;
 }
 
-@mixin mobileMargins{
-  width: 95%;
-  margin: 0 auto;
-}
 
 @mixin linkStyle{
 padding: 1rem;
@@ -57,6 +54,11 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+}
+
+.wrapper{
+  width: 95%;
+  margin: 0 auto;
 }
 
 
@@ -149,10 +151,6 @@ align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.headline_text{
-@include mobileMargins;
-}
-
 .headline_text_name, .headline_text_occupation{
     color: #fff;
     text-align: center;
@@ -201,11 +199,7 @@ align-items: center;
 #about{
   width: 100%;
   background-color: #fff;
-  padding: 3rem 1rem;
-}
-
-#about_text{
-  @include mobileMargins;
+  padding: 2rem 1rem;
 }
 
 .aboutLinkRow{
@@ -241,8 +235,8 @@ align-items: center;
 
 .about_text_bio{
   text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
   font-weight: 400;
   margin-top: 0;
 }
@@ -274,10 +268,6 @@ align-items: center;
   padding: 3rem 1rem;
 }
 
-#portfolio_text{
-  @include mobileMargins;
-}
-
 .portfolio_row{
   display: flex;
   flex-direction: column;
@@ -306,8 +296,8 @@ align-items: center;
    height: 100%;
    width: 100%;
    opacity: 0;
-   transition: opacity 1s ease;
-   background-color: #FF6041;
+   transition: opacity .3s ease;
+   background-color: rgba(255, 96, 65, 0.8);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -328,7 +318,8 @@ align-items: center;
   border: 2px solid #fff;
   border-radius: 5px;
   padding: .8rem 0;
-  color: #fff;
+  background-color: white;
+  color: #FF6041;
   text-align: center;
   width: 220px;
   margin: 0 auto;
@@ -337,8 +328,7 @@ align-items: center;
 }
 
 .portfolio_row_button:hover{
-background-color: white;
-  color: #FF6041;
+  transform: scale(1.1);
 }
 
 // Portfolio Section Ends
@@ -350,11 +340,6 @@ background-color: white;
   padding: 3rem 1rem;
   background-color: #192330;
     overflow: hidden;
-}
-
-
-#contact_text{
-  @include mobileMargins;
 }
 
 .formContainer{
@@ -442,10 +427,6 @@ outline: none;
   background-color: #F3F3F3;
 }
 
-#footer_text{
-  @include mobileMargins;
-}
-
 .footer_copyright{
   text-align: center;
   color: grey;
@@ -483,10 +464,6 @@ outline: none;
   padding: 3rem 1rem;
 }
 
-#testimonial_text{
-  @include mobileMargins;
-}
-
 .testimonial_card{
   background-color: #F3F3F3;
   padding: 1rem 2rem;
@@ -521,12 +498,13 @@ outline: none;
     line-height: 1.95rem;
   }
 
-  .about_text_bio{
-    line-height: 1.7rem;
-  }
-
   .hidebr{
     display: none;
+  }
+
+  .about_text_bio{
+    font-size: 1.15rem;
+    line-height: 1.7rem;
   }
 
 }
@@ -571,17 +549,32 @@ outline: none;
     width: 700px;
   }
 
+}
+
+@media only screen and (min-width: 950px){
   .hidebr2{
     display: block;
   }
 
-  .testimonial_card{
-    width:700px;
-    padding: 1.5rem 3rem;
+  .wrapper{
+    width: 900px;
   }
+
+  .testimonial_card{
+    width:750px;
+    padding: 1.5rem 3rem;
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+  }
+
+  .formContainer{
+    width: 750px;
+  }
+
 }
 
 @media only screen and (min-width: 1024px){
+
 
   .navContainer_mobile{
     display: none;
@@ -647,11 +640,6 @@ outline: none;
 
 #profile{
   width: 100px;
-}
-
-.about_text_bio{
-  font-size: 1.3rem;
-  line-height: 1.9rem;
 }
 
 .headline_text_occupation{
