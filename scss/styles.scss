@@ -38,6 +38,10 @@ a{
 @mixin linkStyle{
 padding: 1rem;
 border-radius: 50%;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;     /* NEW - Chrome */
 display: flex;
 align-items: center;
 justify-content: center;
@@ -50,6 +54,10 @@ transition: background-color .2s ease-in-out;
 @mixin linkPosition{
 width: 90%;
 margin: 0 auto;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;     /* NEW - Chrome */
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -61,12 +69,26 @@ align-items: center;
   margin: 0 auto;
 }
 
+.website-button{
+  margin: 2rem auto;
+  @include buttonStyle;
+  transition: all .2s ease-in-out;
+}
+
+.website-button:hover{
+  background-color: #DB5338;
+  border: 2px solid #DB5338;
+}
 
 // Navigation Menu Starts
 
 .navContainer_mobile{
   width: 100%;
   display: block;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,6 +105,10 @@ align-items: center;
 .navIconsMobile{
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -138,6 +164,10 @@ align-items: center;
   width: auto;
   background-image: url("../images/backgroundImg.jpg");
   background-size: cover;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -262,6 +292,23 @@ align-items: center;
 
 // Portfolio Section Starts
 
+.projectButton{
+  float: right;
+  margin: 0 1rem 1rem 0;
+  color: #fff;
+  background: #FF6041;
+  padding: .5rem;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #FF6041;
+  font-size: .9rem;
+}
+
+.projectButton:hover{
+    background-color: #DB5338;
+    border: 2px solid #DB5338;
+}
+
 #portfolio{
   width: 100%;
   background-color: #F3F3F3;
@@ -269,6 +316,10 @@ align-items: center;
 }
 
 .portfolio_row{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,6 +331,16 @@ align-items: center;
   position: relative;
   width: 100%;
   margin: 1rem auto;
+  background-color: white;
+}
+
+.portfolio_row_container p{
+  line-height: 1.5rem;
+    padding: .5rem 1.5rem;
+}
+
+.portfolio_row_container p.description{
+height: auto;
 }
 
 .portfolio_row_image{
@@ -287,49 +348,7 @@ align-items: center;
   width: 100%;
 }
 
-.portfolio_row_overlay{
-  position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: opacity .3s ease;
-   background-color: rgba(255, 96, 65, 0.8);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
 
-.portfolio_row_container:hover, .portfolio_row_overlay:hover{
-  opacity: 1;
-}
-
-.portfolio_row_overlayText{
-  color: #fff;
-  text-align: center;
-}
-
-
-.portfolio_row_button{
-  border: 2px solid #fff;
-  border-radius: 5px;
-  padding: .8rem 0;
-  background-color: white;
-  color: #FF6041;
-  text-align: center;
-  width: 220px;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-
-.portfolio_row_button:hover{
-  transform: scale(1.1);
-}
 
 // Portfolio Section Ends
 
@@ -525,20 +544,10 @@ outline: none;
     display: block;
   }
 
-  .portfolio_row{
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .portfolio_row_container{
-    width: 48%;
-    margin: 1rem auto 0 auto;
-  }
-
 }
 
 @media only screen and (min-width: 768px){
+
 
   .headline_text_occupation{
     font-size: 1.6rem;
@@ -552,6 +561,20 @@ outline: none;
 }
 
 @media only screen and (min-width: 950px){
+
+  .portfolio_row{
+    flex-direction: row;
+  }
+
+  .portfolio_row_container{
+    width: 45%;
+    margin: 1rem auto 0 auto;
+  }
+
+  .portfolio_row_container p.description{
+  height: 184px;
+  }
+  
   .hidebr2{
     display: block;
   }
@@ -561,9 +584,12 @@ outline: none;
   }
 
   .testimonial_card{
-    width:750px;
+    width:718px;
     padding: 1.5rem 3rem;
-    font-size: 1.15rem;
+  }
+
+  .testimonial_card p{
+    font-size: .98rem;
     line-height: 1.7rem;
   }
 
@@ -583,6 +609,10 @@ outline: none;
   .navContainer_desktop{
     position: fixed;
     z-index: 10;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -624,6 +654,10 @@ outline: none;
 }
 
 .headline_overlay{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -652,17 +686,14 @@ outline: none;
   margin: .3rem auto;
 }
 
-.portfolio_row_overlayText{
-  font-size: 1.3rem;
-}
-
-.portfolio_row{
-  width: 900px;
-}
 
 .flexButton{
-  width: 668px;
+  width: 720px;
   margin: 0 auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;

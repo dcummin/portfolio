@@ -16,7 +16,7 @@ gulp.task("sass", function(){
   return gulp.src("scss/styles.scss") //gets all files ending in scss in the current folder
   .pipe(sass()) //using gulp-sass
   .pipe(autoprefixer({
-            browsers: ['last 4 versions'],
+            browsers: ['last 8 versions'],
             cascade: false
         }))
         .pipe(uglifycss({
